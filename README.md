@@ -4,11 +4,12 @@
 1. Clone the repository.
 2. Install dependencies: `npm install`
 3. Set up PostgreSQL and update the database configuration in `src/app.module.ts`.
-4. Run the application: `npm run start:dev`
-5. Create an env file having your own gmail and password.just like the below.please replace with the right info
+4. Create an env file having your own gmail and password.just like the below.please replace with the right info
 GMAIL_USER = "example@gmail.com"
 
 GMAIL_PASS = "examplepassword"
+
+5. Run the application: `npm run start:dev`
 
 ## Design Choices
 - Used Nest.js for a scalable and modular architecture.
