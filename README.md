@@ -22,6 +22,9 @@ GMAIL_PASS = "examplepassword"
 ## How to Run the Cron Job
 - The cron job is set to run daily at midnight to check for upcoming due dates and send reminder emails.
 
+## To fetch all memberships locally,use the below url on postman
+http://localhost:3000/memberships
+
 
 ## Installation
 

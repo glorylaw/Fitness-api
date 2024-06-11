@@ -38,6 +38,7 @@ export class MembershipService {
       if (updateResult.affected === 0) {
         throw new NotFoundException(`Membership with ID ${id} not found`);
       }
+      
     } catch (error) {
       if (error instanceof NotFoundException) {
         throw error;
