@@ -21,6 +21,7 @@ export class MembershipService {
 
   async findDueMemberships(): Promise<Membership[]> {
     const today = new Date().toISOString().slice(0, 10);
+    console.log(today,"fine")
     try {
       return await this.membershipRepository
         .createQueryBuilder('membership')
@@ -30,6 +31,10 @@ export class MembershipService {
     } catch (error) {
       throw new InternalServerErrorException('Error retrieving due memberships');
     }
+  }
+
+  async createMembership(membership: Membership): Promise<Membership> {
+    return await this.membershipRepository.save(membership);
   }
 
   async updateFirstMonthFlag(id: number): Promise<void> {
